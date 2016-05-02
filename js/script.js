@@ -229,3 +229,11 @@ function computerAI(){
 		me=!me;
 	}
 }
+
+if (chess && chess.getContext) {
+var chessContext = chess.getContext('2d');
+var chessBuffer = document.createElement('canvas');
+chessBuffer.width = chess.width;
+chessBuffer.height = chess.height;
+var chessBufferContext = chessBuffer.getContext('2d');
+}
